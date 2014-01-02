@@ -29,7 +29,7 @@ script: |
   # Configure PHP
   sudo sed -i 's+;date.timezone =+date.timezone = Europe/Rome +g' /etc/php5/cli/php.ini
   sudo sed -i  's/128M/8096M/' /etc/php5/cli/php.ini
-  sudo echo 'xdebug.max_nesting_level=300' >> /etc/php5/cli/php.ini
+  echo 'xdebug.max_nesting_level=300' | sudo tee -a /etc/php5/cli/php.ini
 
   # Configure PEAR
   pear config-set php_ini /etc/php5/cli/php.ini
