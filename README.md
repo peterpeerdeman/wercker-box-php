@@ -11,5 +11,6 @@ PHP 5.5 wercker box with mysqlnd and karma
 * atoum
 * php5-mysqlnd
 * karma
+* yui-compressor
 
 based on the wonderful php5.5 box by eymengunay, thank you for sharing!
